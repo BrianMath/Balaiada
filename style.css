@@ -8,7 +8,7 @@ body {
     color: white;
 }
 
-header, h1 {
+header, h1, h2 {
     text-align: center;
     margin-top: 10px;
 }
@@ -23,16 +23,42 @@ main {
     font-weight: lighter;
 }
 
-main p, main ul {
+main p, ul {
     margin: 0 20px 30px;
     max-width: 950px;
     
     text-align: justify;
 }
 
+ul li {
+    margin-top: 10px;
+}
+
 /* Faz os <p> ficarem centralizados em telas maiores */
 @media (min-width: 950px) {
-    main p, main ul {
+    main p, ul {
         margin: 0 auto 20px;
     }
+}
+
+div#tresCaras, div#duqueCaxias {
+    text-align: center;
+}
+
+div img {
+    max-width: 300px;
+    height: 250px;
+
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+a {
+    color: rgb(44, 97, 241);
+}
+
+footer p {
+    text-align: end;
+    margin-top: 5px;
+    margin-bottom: 7px;
 }
